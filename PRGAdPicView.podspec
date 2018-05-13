@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PRGAdPicView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'PRGAdPicView'
 
 # This description is used to generate tags and improve search results.
@@ -30,10 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-#s.source_files = 'PRGAdPicView/Classes/**/*'
-  s.subspec 'PRGAdPicView' do |adPicView|
-      adPicView.source_files = 'PRGAdPicView/Classes/PRGAdPicView/**/*'
-  end
+  s.source_files = 'PRGAdPicView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'PRGAdPicView' => ['PRGAdPicView/Assets/*.png']

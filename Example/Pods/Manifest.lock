@@ -1,7 +1,5 @@
 PODS:
-  - PRGAdPicView (0.1.0):
-    - PRGAdPicView/PRGAdPicView (= 0.1.0)
-  - PRGAdPicView/PRGAdPicView (0.1.0)
+  - PRGAdPicView (0.1.1)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
@@ -15,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PRGAdPicView: 39a27def937510141a21344576e3a2daeca0fa97
+  PRGAdPicView: d55002210ee7a060717a66d8688154ef479467ab
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
 PODFILE CHECKSUM: f5316fbf6c603162aed90d8b8c0d1e9516935ea3

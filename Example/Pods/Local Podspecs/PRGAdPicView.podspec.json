@@ -1,6 +1,6 @@
 {
   "name": "PRGAdPicView",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "PRGAdPicView",
   "description": "创建一个广告无限轮播图--->PRGAdPicView",
   "homepage": "https://github.com/rookiePRG/PRGAdPicView",
@@ -13,15 +13,10 @@
   },
   "source": {
     "git": "https://github.com/rookiePRG/PRGAdPicView.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "subspecs": [
-    {
-      "name": "PRGAdPicView",
-      "source_files": "PRGAdPicView/Classes/PRGAdPicView/**/*"
-    }
-  ]
+  "source_files": "PRGAdPicView/Classes/**/*"
 }
