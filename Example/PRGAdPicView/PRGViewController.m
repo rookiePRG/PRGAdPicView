@@ -14,7 +14,7 @@
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 
 
-@interface PRGViewController ()
+@interface PRGViewController ()<PRGAdPicViewDelegate>
 
 @end
 
@@ -45,8 +45,14 @@
     }
     
     adPicView.picModels = [tempArr copy];
+    adPicView.delegate = self;
     
     [self.view addSubview:adPicView];
+}
+
+-(void)adPicViewDidSelectedPicModel:(id<PRGAdPicProtocol>)picM
+{
+    NSLog(@"%@",picM.adImgURL);
 }
 
 @end

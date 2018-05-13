@@ -156,7 +156,10 @@ static NSString *const adPicViewCellID = @"adPicViewCellID";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    id<PRGAdPicProtocol> picM = self.picModels[indexPath.item % self.picModels.count];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(adPicViewDidSelectedPicModel:)]) {
+        [self.delegate adPicViewDidSelectedPicModel:picM];
+    }
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -165,15 +168,12 @@ static NSString *const adPicViewCellID = @"adPicViewCellID";
     CGFloat offsetX = scrollView.contentOffset.x;
 
     //2.计算pageControl的currentIndex
-    
     if (_picModels.count) {
         
         NSInteger page = offsetX / scrollView.bounds.size.width;
         page = page % _picModels.count;
         _pageControl.currentPage = page;
     }
-   
-    
 }
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView

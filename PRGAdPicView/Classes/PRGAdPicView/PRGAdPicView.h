@@ -13,7 +13,7 @@ typedef void(^LoadImageBlock)(UIImageView *imageView, NSURL *url);
 
 @protocol PRGAdPicViewDelegate <NSObject>
 
--(void)adPicViewDidSelectedPic:(id)obj;
+- (void)adPicViewDidSelectedPicModel: (id <PRGAdPicProtocol>)picM;
 
 @end
 
