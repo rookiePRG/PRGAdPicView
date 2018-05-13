@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'PRGAdPicView_Example' do
   pod 'PRGAdPicView', :path => '../'
+  pod 'SDWebImage'
 
   target 'PRGAdPicView_Tests' do
     inherit! :search_paths

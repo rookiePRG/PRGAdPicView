@@ -1,0 +1,6 @@
+framework module PRGAdPicView {
+  umbrella header "PRGAdPicView-umbrella.h"
+
+  export *
+  module * { export * }
+}

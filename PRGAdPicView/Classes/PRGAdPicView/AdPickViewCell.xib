@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AdPickViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K6f-eq-VPu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="K6f-eq-VPu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ki8-IZ-UpZ"/>
+                <constraint firstAttribute="trailing" secondItem="K6f-eq-VPu" secondAttribute="trailing" id="bh7-hf-skb"/>
+                <constraint firstAttribute="bottom" secondItem="K6f-eq-VPu" secondAttribute="bottom" id="kKg-dK-kSu"/>
+                <constraint firstItem="K6f-eq-VPu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ndO-1k-2wf"/>
+            </constraints>
+            <connections>
+                <outlet property="AdimageView" destination="K6f-eq-VPu" id="v6S-s3-K5m"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="44"/>
+        </collectionViewCell>
+    </objects>
+</document>
